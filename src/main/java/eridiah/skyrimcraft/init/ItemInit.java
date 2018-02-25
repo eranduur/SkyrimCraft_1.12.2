@@ -4,12 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import eridiah.skyrimcraft.objects.items.ItemBase;
+import eridiah.skyrimcraft.objects.tools.ToolDagger;
+import eridiah.skyrimcraft.objects.tools.ToolSword;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemInit 
 {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
+	//materials
+	public static final ToolMaterial TOOL_GLASS = EnumHelper.addToolMaterial("tool_glass", 2, 250, 5.0F, 2.5F, 10);
+	
+	//items
 	public static final Item STRIPS_LEATHER = new ItemBase("strips_leather");
 	
 	//ingots
@@ -22,4 +30,10 @@ public class ItemInit
 	public static final Item INGOT_STEEL = new ItemBase("ingot_steel");
 	public static final Item MALACHITE_REFINED = new ItemBase("malachite_refined");
 	public static final Item MOONSTONE_REFINED = new ItemBase("moonstone_refined");
+	
+	//daggers
+	public static final Item DAGGER_GLASS = new ToolDagger("dagger_glass", TOOL_GLASS);
+	
+	//swords
+	public static final Item SWORD_GLASS = new ToolSword("sword_glass", TOOL_GLASS);
 }

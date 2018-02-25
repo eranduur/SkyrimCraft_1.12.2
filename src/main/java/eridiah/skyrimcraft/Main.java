@@ -1,7 +1,10 @@
 package eridiah.skyrimcraft;
 
+import eridiah.skyrimcraft.init.ModNetworking;
 import eridiah.skyrimcraft.proxy.CommonProxy;
+import eridiah.skyrimcraft.tabs.TabItems;
 import eridiah.skyrimcraft.util.Reference;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -16,13 +19,15 @@ public class Main
 	@Instance
 	public static Main instance;
 	
+	public static final CreativeTabs TAB_ITEMS = new TabItems("test_tab_items");
+	
 	@SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.COMMON)
 	public static CommonProxy proxy;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		
+		ModNetworking.registerSimpleNetworking();
 	}
 	
 	@EventHandler

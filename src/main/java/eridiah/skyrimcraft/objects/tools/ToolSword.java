@@ -1,14 +1,15 @@
-package eridiah.skyrimcraft.objects.items;
+package eridiah.skyrimcraft.objects.tools;
 
 import eridiah.skyrimcraft.Main;
 import eridiah.skyrimcraft.init.ItemInit;
 import eridiah.skyrimcraft.util.interfaces.IHasModel;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
-public class ItemBase extends Item implements IHasModel
+public class ToolSword extends ItemSword implements IHasModel 
 {
-	public ItemBase(String name)
+	public ToolSword(String name, ToolMaterial material) 
 	{
+		super(material);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(Main.TAB_ITEMS);

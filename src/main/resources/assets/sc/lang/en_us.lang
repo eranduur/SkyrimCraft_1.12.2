@@ -1,3 +1,5 @@
+itemGroup.tab_items=SkyrimCraft Items
+
 item.strips_leather.name=Leather Strips
 
 item.ingot_corundum.name=Corundum Ingot
@@ -9,3 +11,6 @@ item.ingot_silver.name=Silver Ingot
 item.ingot_steel.name=Steel Ingot
 item.malachite_refined.name=Refined Malachite
 item.moonstone_refined.name=Refined Moonstone
+
+item.dagger_glass.name=Glass Dagger
+item.sword_glass.name=Glass Sword
