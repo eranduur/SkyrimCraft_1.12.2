@@ -1,4 +1,4 @@
-package eridiah.skyrimcraft.util.packets;
+package eridiah.skyrimcraft.network.packets;
 
 import eridiah.skyrimcraft.Main;
 import eridiah.skyrimcraft.util.interfaces.IExtendedReach;

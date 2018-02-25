@@ -1,10 +1,10 @@
 package eridiah.skyrimcraft.proxy;
 
 import eridiah.skyrimcraft.init.ModNetworking;
+import eridiah.skyrimcraft.network.packets.MessageExtendedReachAttack;
 import eridiah.skyrimcraft.util.Reference;
 import eridiah.skyrimcraft.util.Utilities;
 import eridiah.skyrimcraft.util.interfaces.IExtendedReach;
-import eridiah.skyrimcraft.util.packets.MessageExtendedReachAttack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,10 +14,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraftforge.client.event.MouseEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
+import net.minecraftforge.fml.relauncher.Side;
 
+@EventBusSubscriber(value = Side.CLIENT, modid = Reference.MODID)
 public class ClientProxy extends CommonProxy 
 {
 	@Override

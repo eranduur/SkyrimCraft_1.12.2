@@ -1,7 +1,7 @@
 package eridiah.skyrimcraft.init;
 
+import eridiah.skyrimcraft.network.packets.MessageExtendedReachAttack;
 import eridiah.skyrimcraft.util.Reference;
-import eridiah.skyrimcraft.util.packets.MessageExtendedReachAttack;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
