@@ -1,4 +1,5 @@
 itemGroup.tab_items=SkyrimCraft Items
+itemGroup.tab_blocks=SkyrimCraft Blocks
 
 item.strips_leather.name=Leather Strips
 
@@ -12,5 +13,15 @@ item.ingot_steel.name=Steel Ingot
 item.malachite_refined.name=Refined Malachite
 item.moonstone_refined.name=Refined Moonstone
 
+item.metal_solid_dwemer.name=Solid Dwemer Metal
+
 item.dagger_glass.name=Glass Dagger
 item.sword_glass.name=Glass Sword
+
+tile.ore_corundum.name=Corundum Ore
+tile.ore_ebony.name=Ebony Ore
+tile.ore_orichalcum.name=Orichalcum Ore
+tile.ore_quicksilver.name=Quicksilver Ore
+tile.ore_silver.name=Silver Ore
+tile.ore_malachite.name=Malachite Ore
+tile.ore_moonstone.name=Moonstone Ore

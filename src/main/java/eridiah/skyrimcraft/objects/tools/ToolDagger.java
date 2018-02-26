@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ToolDagger extends Item implements IExtendedReach, IHasModel
+public class ToolDagger extends Item implements IHasModel
 {
 	private final float attackDamage;
 	private final Item.ToolMaterial material;
@@ -114,12 +114,6 @@ public class ToolDagger extends Item implements IExtendedReach, IHasModel
         }
 
         return multimap;
-    }
-    
-    @Override
-    public float getReach() 
-    {
-    		return 40.0F;
     }
     
     @Override

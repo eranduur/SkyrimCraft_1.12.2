@@ -6,7 +6,7 @@ import eridiah.skyrimcraft.util.interfaces.IExtendedReach;
 import eridiah.skyrimcraft.util.interfaces.IHasModel;
 import net.minecraft.item.ItemSword;
 
-public class ToolSword extends ItemSword implements IHasModel, IExtendedReach
+public class ToolSword extends ItemSword implements IHasModel
 {
 	public ToolSword(String name, ToolMaterial material) 
 	{
@@ -22,11 +22,5 @@ public class ToolSword extends ItemSword implements IHasModel, IExtendedReach
 	public void registerModels() 
 	{
 		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
-	
-	@Override
-	public float getReach() 
-	{
-		return 20.0F;
 	}
 }

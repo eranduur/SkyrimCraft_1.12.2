@@ -1,6 +1,6 @@
 package eridiah.skyrimcraft.proxy;
 
-import eridiah.skyrimcraft.init.ModNetworking;
+import eridiah.skyrimcraft.init.NetworkInit;
 import eridiah.skyrimcraft.network.packets.MessageExtendedReachAttack;
 import eridiah.skyrimcraft.util.Reference;
 import eridiah.skyrimcraft.util.Utilities;
@@ -75,7 +75,7 @@ public class ClientProxy extends CommonProxy
                             {
                                 if (mov.entityHit != thePlayer)
                                 {
-                                    ModNetworking.network.sendToServer(new MessageExtendedReachAttack(mov.entityHit.getEntityId()));
+                                    NetworkInit.network.sendToServer(new MessageExtendedReachAttack(mov.entityHit.getEntityId()));
                                 }
                             }
                         }

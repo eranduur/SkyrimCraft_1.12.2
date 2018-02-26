@@ -31,6 +31,9 @@ public class ItemInit
 	public static final Item MALACHITE_REFINED = new ItemBase("malachite_refined");
 	public static final Item MOONSTONE_REFINED = new ItemBase("moonstone_refined");
 	
+	//dwarven scrap metals
+	public static final Item METAL_SOLID_DWEMER = new ItemBase("metal_solid_dwemer");
+	
 	//daggers
 	public static final Item DAGGER_GLASS = new ToolDagger("dagger_glass", TOOL_GLASS);
 	
