@@ -1,5 +1,8 @@
 itemGroup.tab_items=SkyrimCraft Items
 itemGroup.tab_blocks=SkyrimCraft Blocks
+itemGroup.tab_weapons=SkyrimCraft Weapons
+
+entity.draugr.name=Draugr
 
 item.strips_leather.name=Leather Strips
 
@@ -18,7 +21,7 @@ item.metal_bent_dwemer_scrap.name=Bent Dwemer Scrap Metal
 item.metal_large_dwemer_plate.name=Large Dwemer Plate Metal
 item.metal_small_dwemer_plate.name=Small Dwemer Plate Metal
 item.strut_large_dwemer.name=Large Dwemer Strut
-item.strut_large_decorative.name=Large Decorative Dwemer Strut
+item.strut_large_decorative_dwemer.name=Large Decorative Dwemer Strut
 
 item.dagger_glass.name=Glass Dagger
 item.sword_glass.name=Glass Sword

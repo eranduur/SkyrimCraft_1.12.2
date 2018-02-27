@@ -4,7 +4,9 @@ import eridiah.skyrimcraft.init.NetworkInit;
 import eridiah.skyrimcraft.proxy.CommonProxy;
 import eridiah.skyrimcraft.tabs.TabBlocks;
 import eridiah.skyrimcraft.tabs.TabItems;
+import eridiah.skyrimcraft.tabs.TabWeapons;
 import eridiah.skyrimcraft.util.Reference;
+import eridiah.skyrimcraft.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -22,6 +24,7 @@ public class Main
 	
 	public static final CreativeTabs TAB_ITEMS = new TabItems("test_tab_items");
 	public static final CreativeTabs TAB_BLOCKS = new TabBlocks("tab_blocks");
+	public static final CreativeTabs TAB_WEAPONS = new TabWeapons("tab_weapons");
 	
 	@SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.COMMON)
 	public static CommonProxy proxy;
@@ -29,7 +32,7 @@ public class Main
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		NetworkInit.registerSimpleNetworking();
+		RegistryHandler.preInitRegistries();
 	}
 	
 	@EventHandler

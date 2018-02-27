@@ -1,11 +1,21 @@
 SkyrimCraft To-Do List
 <--------------------->
 
+>Texture Work
+-Finish Dwemer scrap metal textures
+-Tweak/adjust Glass Sword and Dagger textures (specifically dagger)
+-Adjust Leather Strips texture
+
 >General Game Mechanics
 -Create Reduced Range system and interface
 
+>Crafting & Smelting Recipes
+-Add crafting recipe for all new ingots
+-Add crafting recipe for all Weapons
+-Add smelting recipe for all ingots
+
 >Items
--Add all Dwemer Scrap Metal variations
+-
 
 >Blocks
 -Add Mineral blocks for all new minerals/ingots

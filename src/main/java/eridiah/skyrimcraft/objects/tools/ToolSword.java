@@ -13,7 +13,7 @@ public class ToolSword extends ItemSword implements IHasModel
 		super(material);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(Main.TAB_ITEMS);
+		this.setCreativeTab(Main.TAB_WEAPONS);
 		
 		ItemInit.ITEMS.add(this);
 	}

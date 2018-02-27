@@ -32,7 +32,7 @@ public class ToolDagger extends Item implements IHasModel
 		this.setMaxStackSize(1);
 		this.setMaxDamage(material.getMaxUses());
 		this.attackDamage = 3.0F + material.getAttackDamage();
-		this.setCreativeTab(Main.TAB_ITEMS);
+		this.setCreativeTab(Main.TAB_WEAPONS);
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		

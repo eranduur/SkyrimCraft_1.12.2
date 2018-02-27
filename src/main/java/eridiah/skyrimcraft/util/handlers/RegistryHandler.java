@@ -1,7 +1,9 @@
 package eridiah.skyrimcraft.util.handlers;
 
 import eridiah.skyrimcraft.init.BlockInit;
+import eridiah.skyrimcraft.init.EntityInit;
 import eridiah.skyrimcraft.init.ItemInit;
+import eridiah.skyrimcraft.init.NetworkInit;
 import eridiah.skyrimcraft.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -43,5 +45,12 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+	
+	public static void preInitRegistries()
+	{
+		NetworkInit.registerSimpleNetworking();
+		EntityInit.registerEntites();
+		RenderHandler.registerEntityRenders();
 	}
 }
