@@ -1,0 +1,32 @@
+SkyrimCraft To-Do List
+<--------------------->
+
+>General Game Mechanics
+-Create Reduced Range system and interface
+
+>Items
+-Add all Dwemer Scrap Metal variations
+
+>Blocks
+-Add Mineral blocks for all new minerals/ingots
+
+>Weapons
+-Add all Dagger variants
+-Add all Sword variants
+-Add all War Axe variants
+-Add all Mace variants
+-Add all Greatsword variants
+-Add all Battle Axe variants
+-Add all War Hammer variants
+-Add custom Bows
+-Add custom Arrows
+
+>Structures and Generation
+-Add Dwemer Ruins (both above and below ground)
+-Add Nordic Ruins (both above and below ground)
+-Create new WorldGenerator for a more aesthetical landscape
+-Add custom trees and all things associated with them
+
+>Magic
+-Add a base magic system
+-Add basic spells (Lightning, Fire, Ice, Heal)

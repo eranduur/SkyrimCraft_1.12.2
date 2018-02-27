@@ -14,6 +14,11 @@ item.malachite_refined.name=Refined Malachite
 item.moonstone_refined.name=Refined Moonstone
 
 item.metal_solid_dwemer.name=Solid Dwemer Metal
+item.metal_bent_dwemer_scrap.name=Bent Dwemer Scrap Metal
+item.metal_large_dwemer_plate.name=Large Dwemer Plate Metal
+item.metal_small_dwemer_plate.name=Small Dwemer Plate Metal
+item.strut_large_dwemer.name=Large Dwemer Strut
+item.strut_large_decorative.name=Large Decorative Dwemer Strut
 
 item.dagger_glass.name=Glass Dagger
 item.sword_glass.name=Glass Sword

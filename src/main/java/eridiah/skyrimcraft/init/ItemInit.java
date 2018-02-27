@@ -33,6 +33,12 @@ public class ItemInit
 	
 	//dwarven scrap metals
 	public static final Item METAL_SOLID_DWEMER = new ItemBase("metal_solid_dwemer");
+	public static final Item METAL_BENT_DWEMER_SCRAP = new ItemBase("metal_bent_dwemer_scrap");
+	public static final Item METAL_LARGE_DWEMER_PLATE = new ItemBase("metal_large_dwemer_plate");
+	public static final Item METAL_SMALL_DWEMER_PLATE = new ItemBase("metal_small_dwemer_plate");
+	public static final Item STRUT_LARGE_DWEMER = new ItemBase("strut_large_dwemer");
+	public static final Item STRUT_LARGE_DECORATIVE_DWEMER = new ItemBase("strut_large_decorative_dwemer");
+	
 	
 	//daggers
 	public static final Item DAGGER_GLASS = new ToolDagger("dagger_glass", TOOL_GLASS);
