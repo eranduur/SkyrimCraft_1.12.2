@@ -2,6 +2,8 @@ itemGroup.tab_items=SkyrimCraft Items
 itemGroup.tab_blocks=SkyrimCraft Blocks
 itemGroup.tab_weapons=SkyrimCraft Weapons
 
+container.smelter=Smelter
+
 entity.draugr.name=Draugr
 
 item.strips_leather.name=Leather Strips
@@ -33,3 +35,5 @@ tile.ore_quicksilver.name=Quicksilver Ore
 tile.ore_silver.name=Silver Ore
 tile.ore_malachite.name=Malachite Ore
 tile.ore_moonstone.name=Moonstone Ore
+
+tile.smelter.name=Smelter

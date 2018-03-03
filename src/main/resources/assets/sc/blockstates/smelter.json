@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "burning=false,facing=north": { "model": "sc:smelter" },
+        "burning=false,facing=east": { "model": "sc:smelter", "y": 90 },
+        "burning=false,facing=south": { "model": "sc:smelter", "y": 180 },
+        "burning=false,facing=west": { "model": "sc:smelter", "y": 270 },
+        "burning=true,facing=north": { "model": "sc:lit_smelter" },
+        "burning=true,facing=east": { "model": "sc:lit_smelter", "y": 90 },
+        "burning=true,facing=south": { "model": "sc:lit_smelter", "y": 180 },
+        "burning=true,facing=west": { "model": "sc:lit_smelter", "y": 270 }
+    }
+}

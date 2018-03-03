@@ -11,4 +11,5 @@ public class Reference
 	public static final String COMMON = "eridiah.skyrimcraft.proxy.CommonProxy";
 	
 	public static final int ENTITY_DRAUGR = 120;
+	public static final int GUI_SMELTER = 0;
 }
