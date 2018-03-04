@@ -21,6 +21,7 @@ import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -40,7 +41,7 @@ public class BlockSmelter extends BlockBase implements ITileEntityProvider
 	public BlockSmelter(String name) 
 	{
 		super(name, Material.ROCK);
-		this.setSoundType(SoundType.GROUND);
+		this.setSoundType(SoundType.STONE);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
 	}
 	
@@ -156,6 +157,16 @@ public class BlockSmelter extends BlockBase implements ITileEntityProvider
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) 
 	{
 		worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+		
+        if (stack.hasDisplayName())
+        {
+            TileEntity tileentity = worldIn.getTileEntity(pos);
+
+            if (tileentity instanceof TileEntityFurnace)
+            {
+                ((TileEntityFurnace)tileentity).setCustomInventoryName(stack.getDisplayName());
+            }
+        }
 	}
 	
 	@Override
@@ -194,14 +205,22 @@ public class BlockSmelter extends BlockBase implements ITileEntityProvider
 	public IBlockState getStateFromMeta(int meta) 
 	{
 		EnumFacing facing = EnumFacing.getFront(meta);
+		
 		if(facing.getAxis() == EnumFacing.Axis.Y)
 			facing = EnumFacing.NORTH;
-		return this.getDefaultState().withProperty(FACING, facing);
+		
+		boolean isBlockActive = (meta & 8) > 2;
+		
+		return this.getDefaultState().withProperty(FACING, facing).withProperty(BURNING, isBlockActive); //just added another .withProperty() method to include the burning boolean
 	}
 	
 	@Override
 	public int getMetaFromState(IBlockState state) 
 	{
-		return ((EnumFacing)state.getValue(FACING)).getIndex();
+		int blockIsActive = (state.getValue(BURNING) ? 1 : 0) << 3;
+		int facingDirection = ((EnumFacing)state.getValue(FACING)).getIndex();
+		
+		//return ((EnumFacing)state.getValue(FACING)).getIndex();
+		return facingDirection | blockIsActive;
 	}
 }

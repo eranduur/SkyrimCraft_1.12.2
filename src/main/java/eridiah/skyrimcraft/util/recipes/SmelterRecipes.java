@@ -23,9 +23,26 @@ public class SmelterRecipes
 		return INSTANCE;
 	}
 	
+	/**
+	 * In order for the recipe to work, the two items being smelted MUST be from the same Init class. For example, I can only smelt two items from the BlockInit or 
+	 * Blocks (default Minecraft class) classes. I CANNOT smelt an item from each one. I'm currently working on a way around this, but I have to use a .equals() method
+	 * which really limits what I can do. 
+	 * 
+	 * Also, I still have no clue how much xp is actually given per thing smelted, so I'll have to go back and test that at a later date.
+	 */
+	
 	private SmelterRecipes() 
 	{
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_CORUNDUM), new ItemStack(BlockInit.ORE_CORUNDUM), new ItemStack(ItemInit.INGOT_CORUNDUM), 6.0F);
+		//add Gold recipe
+		//add Iron recipe
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_EBONY), new ItemStack(BlockInit.ORE_EBONY), new ItemStack(ItemInit.INGOT_EBONY), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_ORICHALCUM), new ItemStack(BlockInit.ORE_ORICHALCUM), new ItemStack(ItemInit.INGOT_ORICHALCUM), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_QUICKSILVER), new ItemStack(BlockInit.ORE_QUICKSILVER), new ItemStack(ItemInit.INGOT_QUICKSILVER), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_MALACHITE), new ItemStack(BlockInit.ORE_MALACHITE), new ItemStack(ItemInit.MALACHITE_REFINED), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_MOONSTONE), new ItemStack(BlockInit.ORE_MOONSTONE), new ItemStack(ItemInit.MOONSTONE_REFINED), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_SILVER), new ItemStack(BlockInit.ORE_SILVER), new ItemStack(ItemInit.INGOT_SILVER), 6.0F);
+		//Add Steel recipe
 	}
 
 	/**
