@@ -5,6 +5,7 @@ SkyrimCraft To-Do List
 -Finish Dwemer scrap metal textures
 -Tweak/adjust Glass Sword and Dagger textures (specifically dagger)
 -Adjust Leather Strips texture
+-Finish Smelter Model
 
 >General Game Mechanics
 -Create Reduced Range system and interface
@@ -18,7 +19,7 @@ SkyrimCraft To-Do List
 -
 
 >Blocks
--Add Mineral blocks for all new minerals/ingots
+-Add Solid blocks for all new minerals/ingots
 
 >Weapons
 -Add all Dagger variants

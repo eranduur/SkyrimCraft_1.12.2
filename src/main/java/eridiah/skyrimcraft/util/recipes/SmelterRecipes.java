@@ -34,15 +34,15 @@ public class SmelterRecipes
 	private SmelterRecipes() 
 	{
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_CORUNDUM), new ItemStack(BlockInit.ORE_CORUNDUM), new ItemStack(ItemInit.INGOT_CORUNDUM), 6.0F);
-		//add Gold recipe
-		//add Iron recipe
+		this.addSmeltingRecipe(new ItemStack(Blocks.GOLD_ORE), new ItemStack(Blocks.GOLD_ORE), new ItemStack(ItemInit.INGOT_GOLD), 6.0F);
+		this.addSmeltingRecipe(new ItemStack(Blocks.IRON_ORE), new ItemStack(Blocks.IRON_ORE), new ItemStack(ItemInit.INGOT_IRON), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_EBONY), new ItemStack(BlockInit.ORE_EBONY), new ItemStack(ItemInit.INGOT_EBONY), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_ORICHALCUM), new ItemStack(BlockInit.ORE_ORICHALCUM), new ItemStack(ItemInit.INGOT_ORICHALCUM), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_QUICKSILVER), new ItemStack(BlockInit.ORE_QUICKSILVER), new ItemStack(ItemInit.INGOT_QUICKSILVER), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_MALACHITE), new ItemStack(BlockInit.ORE_MALACHITE), new ItemStack(ItemInit.MALACHITE_REFINED), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_MOONSTONE), new ItemStack(BlockInit.ORE_MOONSTONE), new ItemStack(ItemInit.MOONSTONE_REFINED), 6.0F);
 		this.addSmeltingRecipe(new ItemStack(BlockInit.ORE_SILVER), new ItemStack(BlockInit.ORE_SILVER), new ItemStack(ItemInit.INGOT_SILVER), 6.0F);
-		//Add Steel recipe
+		//Add Corundum Ingot recipe
 	}
 
 	/**

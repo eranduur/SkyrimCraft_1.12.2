@@ -28,6 +28,8 @@ public class ItemInit
 	public static final Item INGOT_QUICKSILVER = new ItemBase("ingot_quicksilver");
 	public static final Item INGOT_SILVER = new ItemBase("ingot_silver");
 	public static final Item INGOT_STEEL = new ItemBase("ingot_steel");
+	public static final Item INGOT_GOLD = new ItemBase("ingot_gold");
+	public static final Item INGOT_IRON = new ItemBase("ingot_iron");
 	public static final Item MALACHITE_REFINED = new ItemBase("malachite_refined");
 	public static final Item MOONSTONE_REFINED = new ItemBase("moonstone_refined");
 	
