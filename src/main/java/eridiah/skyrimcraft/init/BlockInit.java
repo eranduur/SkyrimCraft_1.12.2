@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import eridiah.skyrimcraft.objects.blocks.BlockBase;
+import eridiah.skyrimcraft.objects.blocks.BlockDrawer;
 import eridiah.skyrimcraft.objects.blocks.BlockSmelter;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -22,4 +23,6 @@ public class BlockInit
 	public static final Block ORE_MOONSTONE = new BlockBase("ore_moonstone", Material.ROCK);
 	
 	public static final Block SMELTER = new BlockSmelter("smelter");
+	
+	public static final Block DRAWER_SMALL = new BlockDrawer("drawer", Material.WOOD);
 }

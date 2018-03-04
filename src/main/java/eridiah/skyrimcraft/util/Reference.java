@@ -12,4 +12,5 @@ public class Reference
 	
 	public static final int ENTITY_DRAUGR = 120;
 	public static final int GUI_SMELTER = 0;
+	public static final int GUI_DRAWER = 2;
 }

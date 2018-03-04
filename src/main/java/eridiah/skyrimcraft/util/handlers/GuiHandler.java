@@ -1,7 +1,10 @@
 package eridiah.skyrimcraft.util.handlers;
 
+import eridiah.skyrimcraft.container.ContainerDrawer;
 import eridiah.skyrimcraft.container.ContainerSmelter;
+import eridiah.skyrimcraft.gui.GuiDrawer;
 import eridiah.skyrimcraft.gui.GuiSmelter;
+import eridiah.skyrimcraft.tileentity.TileEntityDrawer;
 import eridiah.skyrimcraft.tileentity.TileEntitySmelter;
 import eridiah.skyrimcraft.util.Reference;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,6 +19,8 @@ public class GuiHandler implements IGuiHandler
 	{
 		if(ID == Reference.GUI_SMELTER)
 			return new ContainerSmelter(player.inventory, (TileEntitySmelter)world.getTileEntity(new BlockPos(x, y, z)));
+		if(ID == Reference.GUI_DRAWER)
+			return new ContainerDrawer(player.inventory, (TileEntityDrawer)world.getTileEntity(new BlockPos(x, y, z)));
 		return null;
 	}
 
@@ -24,6 +29,8 @@ public class GuiHandler implements IGuiHandler
 	{
 		if(ID == Reference.GUI_SMELTER)
 			return new GuiSmelter(player.inventory, (TileEntitySmelter)world.getTileEntity(new BlockPos(x, y, z)));
+		if(ID == Reference.GUI_DRAWER)
+			return new GuiDrawer(player.inventory, (TileEntityDrawer)world.getTileEntity(new BlockPos(x, y, z)));
 		return null;
 	}	
 }

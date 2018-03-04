@@ -3,6 +3,7 @@ itemGroup.tab_blocks=SkyrimCraft Blocks
 itemGroup.tab_weapons=SkyrimCraft Weapons
 
 container.smelter=Smelter
+container.drawer.name=Drawer
 
 entity.draugr.name=Draugr
 
@@ -39,3 +40,4 @@ tile.ore_malachite.name=Malachite Ore
 tile.ore_moonstone.name=Moonstone Ore
 
 tile.smelter.name=Smelter
+tile.drawer.name=Drawer
