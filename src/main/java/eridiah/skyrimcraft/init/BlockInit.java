@@ -24,5 +24,5 @@ public class BlockInit
 	
 	public static final Block SMELTER = new BlockSmelter("smelter");
 	
-	public static final Block DRAWER_SMALL = new BlockDrawer("drawer", Material.WOOD);
+	public static final Block DRAWER = new BlockDrawer("drawer");
 }
