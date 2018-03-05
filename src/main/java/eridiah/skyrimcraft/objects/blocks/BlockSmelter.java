@@ -5,7 +5,7 @@ import java.util.Random;
 import eridiah.skyrimcraft.Main;
 import eridiah.skyrimcraft.init.BlockInit;
 import eridiah.skyrimcraft.tileentity.TileEntitySmelter;
-import eridiah.skyrimcraft.util.Reference;
+import eridiah.skyrimcraft.util.handlers.GuiHandler;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
@@ -88,7 +88,7 @@ public class BlockSmelter extends BlockBase implements ITileEntityProvider
 	{
 		if(!worldIn.isRemote)
 		{
-			playerIn.openGui(Main.instance, Reference.GUI_SMELTER, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			playerIn.openGui(Main.instance, GuiHandler.GUI_SMELTER_ID, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 		
 		return true;

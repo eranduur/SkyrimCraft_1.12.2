@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerDrawer extends Container
 {
@@ -19,7 +20,13 @@ public class ContainerDrawer extends Container
 			IItemHandler inventory = tileEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
 			
 			//custom drawer slots
-			
+			for(int y = 0; y < 3; y++)
+			{
+				for(int x = 0; x < 3; x++)
+				{
+					addSlotToContainer(new SlotItemHandler(inventory, x + (y * 3), 62 + x * 18, 17 + y * 18));
+				}
+			}
 			
 			//player inventory
 			for(int y = 0; y < 3; y++)
@@ -39,9 +46,42 @@ public class ContainerDrawer extends Container
 	}
 	
 	@Override
-	public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) 
+	public ItemStack transferStackInSlot(EntityPlayer player, int index) 
 	{
-		return super.transferStackInSlot(playerIn, index);
+		ItemStack stack = ItemStack.EMPTY;
+		Slot slot = inventorySlots.get(index);
+		
+		if(slot != null && slot.getHasStack())
+		{
+			ItemStack stackInSlot = slot.getStack();
+			stack = stackInSlot.copy();
+			
+			int containerSlots = inventorySlots.size() - player.inventory.mainInventory.size();
+			
+			if(index < containerSlots)
+			{
+				if(!this.mergeItemStack(stackInSlot, containerSlots, inventorySlots.size(), true))
+				{
+					return ItemStack.EMPTY;
+				}
+			}
+			else if(!this.mergeItemStack(stackInSlot, 0, containerSlots, false))
+			{
+				return ItemStack.EMPTY;
+			}
+			
+			if(stackInSlot.getCount() == 0)
+			{
+				slot.putStack(ItemStack.EMPTY);
+			}
+			else
+			{
+				slot.onSlotChanged();
+			}
+			
+			slot.onTake(player, stackInSlot);
+		}
+		return stack;
 	}
 	
 	@Override
